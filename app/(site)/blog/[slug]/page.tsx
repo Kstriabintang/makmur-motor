@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { CalendarDays, Clock, ChevronRight } from "lucide-react";
+import { CalendarDays, Clock, ChevronRight, Lightbulb } from "lucide-react";
 import { getAllPosts, getPostBySlug } from "@/lib/blog";
 import { blogPostingJsonLd, breadcrumbJsonLd } from "@/lib/seo";
 import { CONTACT } from "@/lib/contact";
@@ -117,6 +117,16 @@ export default async function BlogPostPage({
                   </h2>
                 );
               }
+              if (block.type === "h3") {
+                return (
+                  <h3
+                    key={i}
+                    className="mb-0 mt-8 font-display text-lg font-bold text-ink md:text-xl"
+                  >
+                    {block.text}
+                  </h3>
+                );
+              }
               if (block.type === "ul") {
                 return (
                   <ul key={i} className="space-y-3">
@@ -130,6 +140,37 @@ export default async function BlogPostPage({
                       </li>
                     ))}
                   </ul>
+                );
+              }
+              if (block.type === "ol") {
+                return (
+                  <ol key={i} className="space-y-3">
+                    {block.items.map((it, j) => (
+                      <li
+                        key={j}
+                        className="relative pl-10 text-[1.0625rem] leading-[1.8] text-slate-600 dark:text-slate-300"
+                      >
+                        <span className="absolute left-0 top-1 grid h-7 w-7 place-items-center rounded-full bg-brand/10 text-sm font-bold text-brand">
+                          {j + 1}
+                        </span>
+                        {it}
+                      </li>
+                    ))}
+                  </ol>
+                );
+              }
+              if (block.type === "tip") {
+                return (
+                  <div
+                    key={i}
+                    className="flex gap-3 rounded-xl border-l-4 border-brand bg-brand/5 p-4 dark:bg-brand/10"
+                  >
+                    <Lightbulb className="mt-0.5 h-5 w-5 shrink-0 text-brand" />
+                    <p className="text-[1.0625rem] leading-relaxed text-ink/80 dark:text-slate-200">
+                      <span className="font-semibold text-brand">Tips: </span>
+                      {block.text}
+                    </p>
+                  </div>
                 );
               }
               if (i === 0) {

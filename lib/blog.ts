@@ -4,7 +4,10 @@
 export type BlogBlock =
   | { type: "p"; text: string }
   | { type: "h2"; text: string }
-  | { type: "ul"; items: string[] };
+  | { type: "h3"; text: string }
+  | { type: "ul"; items: string[] }
+  | { type: "ol"; items: string[] }
+  | { type: "tip"; text: string };
 
 export interface BlogPost {
   slug: string;
@@ -371,6 +374,183 @@ export const posts: BlogPost[] = [
       {
         type: "p",
         text: "Makmur Motor menyediakan beragam MPV dan SUV keluarga berkualitas di Denpasar. Bandingkan langsung di katalog kami, atau konsultasi gratis via WhatsApp untuk menemukan mobil keluarga idaman.",
+      },
+    ],
+  },
+  {
+    slug: "panduan-lengkap-membeli-mobil-bekas-2026",
+    title: "Panduan Lengkap Membeli Mobil Bekas 2026: Checklist Anti Tertipu",
+    description:
+      "Panduan super lengkap membeli mobil bekas — dari menghitung budget total, riset harga, inspeksi fisik & mesin, cek dokumen & legalitas, test drive, negosiasi, sampai proses balik nama. Lengkap dengan checklist anti tertipu.",
+    date: "2026-06-18",
+    author: "Tim Makmur Motor",
+    cover: "/cars/rush-gr-sport-2021/8.jpg",
+    readMinutes: 12,
+    blocks: [
+      {
+        type: "p",
+        text: "Membeli mobil bekas bisa sangat menguntungkan — Anda mendapat mobil idaman dengan harga jauh lebih murah daripada baru. Namun tanpa persiapan, risikonya juga nyata: unit bekas tabrakan, bekas banjir, odometer diputar mundur, hingga dokumen bermasalah. Panduan lengkap ini akan memandu Anda langkah demi langkah, dari nol sampai mobil resmi atas nama Anda, lengkap dengan checklist agar tidak tertipu.",
+      },
+
+      { type: "h2", text: "1. Hitung Anggaran Total, Bukan Hanya Harga Mobil" },
+      {
+        type: "p",
+        text: "Kesalahan paling umum pembeli pemula adalah menghabiskan seluruh dana hanya untuk harga mobil. Padahal ada banyak biaya menyertai kepemilikan. Alokasikan anggaran Anda untuk seluruh komponen berikut:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Harga mobil — idealnya maksimal 80% dari total dana yang Anda siapkan.",
+          "Biaya balik nama (BBN) dan administrasi — bervariasi per daerah.",
+          "Pajak tahunan (PKB) — pastikan pajak berjalan tidak menunggak.",
+          "Asuransi (TLO atau All Risk) untuk melindungi aset Anda.",
+          "Dana servis awal: ganti oli, filter, kampas rem, kemungkinan ban.",
+          "Dana darurat 5–10% untuk perbaikan tak terduga setelah pembelian.",
+        ],
+      },
+      {
+        type: "tip",
+        text: "Sisihkan minimal 10–15% dari harga mobil sebagai dana perawatan tahun pertama. Mobil bekas hampir selalu butuh penyegaran kecil setelah dibeli.",
+      },
+
+      { type: "h2", text: "2. Riset Sebelum Datang Survei" },
+      {
+        type: "p",
+        text: "Datang dengan informasi membuat Anda tidak mudah dibohongi dan lebih percaya diri saat negosiasi. Lakukan riset ini terlebih dahulu:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Bandingkan harga pasaran model & tahun yang sama dari beberapa sumber.",
+          "Baca review pemilik untuk tahu penyakit khas (common problem) model tersebut.",
+          "Cek ketersediaan dan harga suku cadang — pilih yang mudah & murah.",
+          "Tentukan 2–3 kandidat unit agar punya pembanding saat memutuskan.",
+        ],
+      },
+
+      { type: "h2", text: "3. Inspeksi Fisik Menyeluruh" },
+      {
+        type: "p",
+        text: "Inilah tahap paling krusial. Lakukan pengecekan di siang hari yang terang dan saat mobil dalam kondisi mesin dingin. Bagi pemeriksaan ke empat area berikut.",
+      },
+      { type: "h3", text: "Eksterior & Bodi" },
+      {
+        type: "ul",
+        items: [
+          "Periksa celah antar-panel (nat) — celah tidak rata menandakan bekas perbaikan tabrakan.",
+          "Amati perbedaan warna atau tekstur cat yang menandakan cat ulang.",
+          "Cek karat di sudut pintu, bawah karpet, dan kolong mobil.",
+          "Pastikan semua kaca, lampu, dan spion mulus tanpa retak.",
+        ],
+      },
+      { type: "h3", text: "Interior & Kelistrikan" },
+      {
+        type: "ul",
+        items: [
+          "Cium bau apek/lembap yang bisa menandakan bekas terendam banjir.",
+          "Uji semua tombol, power window, audio, lampu, dan kamera/sensor.",
+          "Pastikan AC cepat dingin dan stabil.",
+          "Cek kondisi jok, plafon, dan dashboard dari retak atau noda parah.",
+        ],
+      },
+      { type: "h3", text: "Mesin" },
+      {
+        type: "ul",
+        items: [
+          "Buka kap, periksa kebocoran oli dan rembesan di sekitar mesin.",
+          "Nyalakan mesin dingin: dengarkan suara kasar, pincang, atau ngelitik.",
+          "Perhatikan warna asap knalpot — putih tebal atau hitam pekat patut diwaspadai.",
+          "Cek kondisi aki, radiator, dan kekentalan/warna oli pada dipstick.",
+        ],
+      },
+      { type: "h3", text: "Kaki-Kaki & Ban" },
+      {
+        type: "ul",
+        items: [
+          "Saat test drive di jalan tidak rata, rasakan bunyi 'gluduk' pada kaki-kaki.",
+          "Periksa keausan ban — bila tidak rata, bisa jadi masalah spooring/kaki-kaki.",
+          "Goyang setiap roda untuk mengecek bearing dan tie rod.",
+        ],
+      },
+      {
+        type: "tip",
+        text: "Tidak yakin menilai sendiri? Ajak teman yang paham mesin, atau gunakan jasa inspeksi mobil independen. Biaya kecil ini bisa menyelamatkan Anda dari kerugian jutaan rupiah.",
+      },
+
+      { type: "h2", text: "4. Cek Dokumen & Legalitas" },
+      {
+        type: "p",
+        text: "Mobil sebagus apa pun tidak ada artinya jika dokumennya bermasalah. Pastikan seluruh legalitas berikut bersih:",
+      },
+      {
+        type: "ul",
+        items: [
+          "STNK, BPKB, dan faktur lengkap serta atas nama yang jelas.",
+          "Nomor rangka dan nomor mesin pada fisik mobil COCOK dengan dokumen.",
+          "Pajak hidup (tidak menunggak) dan masa berlaku STNK masih panjang.",
+          "Tidak berstatus blokir, sengketa, atau leasing yang belum lunas.",
+        ],
+      },
+
+      { type: "h2", text: "5. Lakukan Test Drive yang Benar" },
+      {
+        type: "p",
+        text: "Test drive bukan sekadar formalitas. Lakukan dengan urutan ini agar Anda benar-benar merasakan kondisi mobil:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Mulai dari kondisi mesin dingin untuk mendengar suara awal yang jujur.",
+          "Jalankan di berbagai kecepatan: pelan di kemacetan dan agak kencang di jalan lurus.",
+          "Lewati jalan bergelombang untuk menguji kaki-kaki dan peredaman.",
+          "Uji pengereman mendadak (aman) untuk merasakan rem dan kestabilan.",
+          "Untuk matic, rasakan perpindahan gigi — harus halus tanpa hentakan keras.",
+          "Matikan AC lalu nyalakan lagi, perhatikan apakah mesin tetap stabil.",
+        ],
+      },
+
+      { type: "h2", text: "6. Strategi Negosiasi Harga" },
+      {
+        type: "p",
+        text: "Hampir semua harga mobil bekas masih bisa ditawar. Gunakan temuan Anda saat inspeksi sebagai dasar negosiasi yang masuk akal:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Jadikan kekurangan kecil (ban menipis, perlu servis) sebagai alasan menawar.",
+          "Tunjukkan harga pembanding dari unit serupa yang sudah Anda riset.",
+          "Tawar dengan sopan dan realistis — penjual lebih responsif pada pembeli serius.",
+          "Tanyakan bonus: servis, karpet, kaca film, atau perpanjangan pajak.",
+        ],
+      },
+
+      { type: "h2", text: "7. Pembayaran & Proses Balik Nama" },
+      {
+        type: "p",
+        text: "Setelah sepakat, amankan transaksi dan segera urus balik nama agar mobil sah menjadi milik Anda:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Buat kuitansi bermaterai yang ditandatangani kedua pihak.",
+          "Lakukan pembayaran melalui metode yang aman dan tercatat.",
+          "Pastikan Anda menerima STNK, BPKB, faktur, dan KTP penjual (untuk balik nama).",
+          "Urus balik nama di Samsat, atau gunakan jasa biro yang terpercaya.",
+        ],
+      },
+      {
+        type: "tip",
+        text: "Segera lakukan balik nama. Selain memudahkan urusan pajak ke depan, ini menghindari Anda dari masalah hukum bila mobil tersangkut kasus lalu lintas atas nama pemilik lama.",
+      },
+
+      { type: "h2", text: "Kenapa Membeli di Showroom Lebih Aman?" },
+      {
+        type: "p",
+        text: "Membeli dari perorangan memang kadang lebih murah, tetapi risikonya Anda tanggung sendiri. Showroom terpercaya sudah menyaring dan memeriksa setiap unit, memastikan dokumen lengkap, serta memberikan garansi dan layanan purna jual. Anda juga dimudahkan dengan pilihan kredit dan tukar tambah dalam satu tempat.",
+      },
+      {
+        type: "p",
+        text: "Di Makmur Motor, setiap mobil melewati pemeriksaan menyeluruh sebelum dipajang, dengan dokumen yang dijamin lengkap dan harga yang transparan. Jelajahi koleksi terbaru kami di halaman katalog, atau konsultasi gratis via WhatsApp — tim kami siap membantu Anda menemukan mobil bekas berkualitas tanpa rasa khawatir.",
       },
     ],
   },
