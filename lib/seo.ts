@@ -8,7 +8,8 @@ export const SITE_URL = "https://makmurmotor.biz.id";
  * `google-site-verification` meta tag). Fill this in after creating the
  * property in Search Console, or verify via DNS TXT instead.
  */
-export const GOOGLE_SITE_VERIFICATION = "";
+export const GOOGLE_SITE_VERIFICATION =
+  "Hk3RHTSu8mJKH1u66TtXSHEXClyl0d0OojQMhHX-8q0";
 
 /** Build an absolute URL from a path or pass-through if already absolute. */
 export function abs(pathOrUrl: string): string {
