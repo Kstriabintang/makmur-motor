@@ -40,6 +40,7 @@ const linkCols = [
   {
     title: "Informasi",
     links: [
+      { label: "Blog & Tips", href: "/blog" },
       { label: "Cara Beli", href: "/#tentang" },
       { label: "FAQ", href: "/#tentang" },
       { label: "Syarat & Ketentuan", href: "/#tentang" },

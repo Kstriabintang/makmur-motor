@@ -11,10 +11,9 @@
   "observability": {
     "enabled": true
   },
-  "routes": [
-    { "pattern": "makmurmotor.biz.id", "custom_domain": true },
-    { "pattern": "www.makmurmotor.biz.id", "custom_domain": true }
-  ],
+  // Custom domains (makmurmotor.biz.id + www) are attached at the account level
+  // via the Workers Domains API and always route to the latest deployment, so
+  // they are intentionally NOT declared here (avoids needing zone-route perms).
   "d1_databases": [
     {
       "binding": "DB",

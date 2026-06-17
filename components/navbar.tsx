@@ -15,6 +15,7 @@ export const navLinks = [
   { label: "Home", href: "/" },
   { label: "Katalog", href: "/katalog" },
   { label: "Kategori", href: "/#kategori" },
+  { label: "Blog", href: "/blog" },
   { label: "Tentang", href: "/#tentang" },
   { label: "Kontak", href: "/#kontak" },
 ];

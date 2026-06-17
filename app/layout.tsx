@@ -2,7 +2,12 @@ import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import { CONTACT } from "@/lib/contact";
+import {
+  SITE_URL,
+  GOOGLE_SITE_VERIFICATION,
+  organizationJsonLd,
+  websiteJsonLd,
+} from "@/lib/seo";
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -18,12 +23,14 @@ const grotesk = Space_Grotesk({
   weight: ["500", "600", "700"],
 });
 
-const SITE_URL = "https://makmurmotor.biz.id";
-
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  alternates: { canonical: "/" },
+  ...(GOOGLE_SITE_VERIFICATION
+    ? { verification: { google: GOOGLE_SITE_VERIFICATION } }
+    : {}),
   title: {
-    default: "Makmur Motor — Premium Car Showroom Denpasar",
+    default: "Makmur Motor — Showroom Mobil Bekas Berkualitas di Denpasar",
     template: "%s | Makmur Motor",
   },
   description:
@@ -63,23 +70,6 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-const orgJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "AutoDealer",
-  name: CONTACT.brand,
-  description: CONTACT.tagline,
-  email: CONTACT.email,
-  telephone: `+${CONTACT.whatsappNumber}`,
-  url: SITE_URL,
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Denpasar",
-    addressRegion: "Bali",
-    addressCountry: "ID",
-  },
-  sameAs: [CONTACT.tiktok],
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
@@ -88,7 +78,11 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
       </head>
       <body className={`${jakarta.variable} ${grotesk.variable} font-sans`}>

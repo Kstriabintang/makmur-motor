@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Katalog Mobil",
   description:
     "Jelajahi seluruh koleksi mobil bekas berkualitas di Makmur Motor. Filter berdasarkan kategori, harga, tahun, transmisi, dan lokasi showroom.",
+  alternates: { canonical: "/katalog" },
 };
 
 export default async function KatalogPage() {
