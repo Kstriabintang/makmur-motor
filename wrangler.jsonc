@@ -1,0 +1,32 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "makmur-motor",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2025-03-25",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": {
+    "binding": "ASSETS",
+    "directory": ".open-next/assets"
+  },
+  "observability": {
+    "enabled": true
+  },
+  "routes": [
+    { "pattern": "makmurmotor.biz.id", "custom_domain": true },
+    { "pattern": "www.makmurmotor.biz.id", "custom_domain": true }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "makmur-motor-db",
+      "database_id": "5ab23c9c-3af1-4265-9665-7cd7a8de1e05",
+      "migrations_dir": "drizzle"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "MEDIA_KV",
+      "id": "13c63c7bc8bb4ce5942b3d78fc70b152"
+    }
+  ]
+}

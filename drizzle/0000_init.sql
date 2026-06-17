@@ -1,0 +1,20 @@
+CREATE TABLE `cars` (
+	`id` text PRIMARY KEY NOT NULL,
+	`nama` text NOT NULL,
+	`tahun` integer NOT NULL,
+	`harga` integer NOT NULL,
+	`harga_cash` integer,
+	`kategori` text NOT NULL,
+	`transmisi` text NOT NULL,
+	`bahan_bakar` text NOT NULL,
+	`km` text NOT NULL,
+	`warna` text,
+	`lokasi` text NOT NULL,
+	`folder_foto` text NOT NULL,
+	`whatsapp_message` text NOT NULL,
+	`featured` integer DEFAULT false NOT NULL,
+	`sold` integer DEFAULT false NOT NULL,
+	`photos` text NOT NULL,
+	`created_at` integer NOT NULL,
+	`updated_at` integer NOT NULL
+);

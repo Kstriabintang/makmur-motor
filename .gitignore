@@ -1,0 +1,24 @@
+/node_modules
+/.next
+/out
+/build
+.DS_Store
+*.pem
+npm-debug.log*
+.env*
+!.env.example
+.dev.vars
+.vercel
+*.tsbuildinfo
+next-env.d.ts
+
+# Cloudflare / OpenNext
+/.open-next
+/.wrangler
+.cf-token
+
+# Internal working files (not for public repo)
+/tugas-opus.md
+/bahanbahan.txt
+/referensi.png
+/tiktok.jpg
