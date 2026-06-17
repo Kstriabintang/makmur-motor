@@ -29,7 +29,7 @@ export default function BlogIndexPage() {
           <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-brand">
             Blog & Tips
           </p>
-          <h1 className="text-3xl font-bold tracking-tight md:text-5xl">
+          <h1 className="font-display text-3xl font-bold tracking-tight md:text-5xl">
             Tips & Panduan Mobil Bekas
           </h1>
           <p className="mt-3 max-w-2xl text-ink-soft">
@@ -67,7 +67,7 @@ export default function BlogIndexPage() {
                     {post.readMinutes} menit
                   </span>
                 </div>
-                <h2 className="text-lg font-bold leading-snug text-ink transition-colors group-hover:text-brand">
+                <h2 className="font-display text-lg font-bold leading-snug text-ink transition-colors group-hover:text-brand">
                   {post.title}
                 </h2>
                 <p className="mt-2 line-clamp-3 flex-1 text-sm text-ink-soft">

@@ -76,11 +76,11 @@ export default async function BlogPostPage({
           <span className="line-clamp-1 text-ink">{post.title}</span>
         </nav>
 
-        <div className="mx-auto max-w-3xl">
-          <h1 className="text-3xl font-bold leading-tight tracking-tight md:text-4xl">
+        <div className="mx-auto max-w-[44rem]">
+          <h1 className="text-balance font-display text-[2rem] font-bold leading-[1.15] tracking-tight text-ink md:text-[2.6rem]">
             {post.title}
           </h1>
-          <div className="mt-4 flex flex-wrap items-center gap-4 text-sm text-ink-soft">
+          <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-ink-soft">
             <span className="inline-flex items-center gap-1.5">
               <CalendarDays className="h-4 w-4" />
               {formatDate(post.date)}
@@ -92,24 +92,26 @@ export default async function BlogPostPage({
             <span>oleh {post.author}</span>
           </div>
 
-          <div className="relative mt-8 aspect-[16/9] overflow-hidden rounded-2xl bg-slate-100 dark:bg-slate-800">
+          <hr className="mt-6 border-card-border dark:border-white/10" />
+
+          <div className="relative mt-8 aspect-[16/9] overflow-hidden rounded-2xl bg-slate-100 shadow-sm ring-1 ring-card-border dark:bg-slate-800 dark:ring-white/10">
             <Image
               src={post.cover}
               alt={post.title}
               fill
               priority
-              sizes="(max-width: 768px) 100vw, 768px"
+              sizes="(max-width: 768px) 100vw, 720px"
               className="object-cover"
             />
           </div>
 
-          <div className="mt-8 space-y-5 text-[17px] leading-relaxed text-ink-soft">
+          <div className="mt-10 space-y-6">
             {post.blocks.map((block, i) => {
               if (block.type === "h2") {
                 return (
                   <h2
                     key={i}
-                    className="pt-2 text-2xl font-bold tracking-tight text-ink"
+                    className="mb-1 mt-12 font-display text-2xl font-bold tracking-tight text-ink md:text-[1.7rem]"
                   >
                     {block.text}
                   </h2>
@@ -117,14 +119,37 @@ export default async function BlogPostPage({
               }
               if (block.type === "ul") {
                 return (
-                  <ul key={i} className="list-disc space-y-2 pl-6">
+                  <ul key={i} className="space-y-3">
                     {block.items.map((it, j) => (
-                      <li key={j}>{it}</li>
+                      <li
+                        key={j}
+                        className="relative pl-7 text-[1.0625rem] leading-[1.8] text-slate-600 dark:text-slate-300"
+                      >
+                        <span className="absolute left-1 top-[0.7rem] h-1.5 w-1.5 rounded-full bg-brand" />
+                        {it}
+                      </li>
                     ))}
                   </ul>
                 );
               }
-              return <p key={i}>{block.text}</p>;
+              if (i === 0) {
+                return (
+                  <p
+                    key={i}
+                    className="text-xl leading-relaxed text-ink/90 dark:text-slate-200"
+                  >
+                    {block.text}
+                  </p>
+                );
+              }
+              return (
+                <p
+                  key={i}
+                  className="text-[1.0625rem] leading-[1.85] text-slate-600 dark:text-slate-300"
+                >
+                  {block.text}
+                </p>
+              );
             })}
           </div>
 
