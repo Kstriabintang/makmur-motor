@@ -1,14 +1,17 @@
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
+import { CONTACT } from "./contact";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export const WA_NUMBER = "6281259174400";
+/** Nomor WhatsApp utama (single source of truth ada di `lib/contact.ts`). */
+export const WA_NUMBER = CONTACT.whatsappNumber;
 
-export function waLink(message: string) {
-  return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`;
+/** Bangun link chat WhatsApp. Default ke nomor utama; oper `number` untuk nomor lain. */
+export function waLink(message: string, number: string = WA_NUMBER) {
+  return `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
 }
 
 export function formatRupiah(value: number) {

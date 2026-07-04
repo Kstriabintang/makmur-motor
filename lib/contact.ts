@@ -3,6 +3,8 @@ export const CONTACT = {
   tagline: "Premium Car Showroom — Jual Beli Mobil Berkualitas",
   whatsappDisplay: "081259174400",
   whatsappNumber: "6281259174400",
+  whatsappDisplay2: "081238320119",
+  whatsappNumber2: "6281238320119",
   email: "makmurmotorantasura@gmail.com",
   tiktok: "https://www.tiktok.com/@makmurmotordps",
   tiktokHandle: "@makmurmotordps",

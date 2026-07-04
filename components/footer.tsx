@@ -159,6 +159,19 @@ export function Footer() {
               </li>
               <li>
                 <a
+                  href={waLink(
+                    "Halo Makmur Motor, saya ingin bertanya",
+                    CONTACT.whatsappNumber2,
+                  )}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-slate-400 transition-colors hover:text-brand"
+                >
+                  <Phone className="h-4 w-4" /> {CONTACT.whatsappDisplay2}
+                </a>
+              </li>
+              <li>
+                <a
                   href={`mailto:${CONTACT.email}`}
                   className="flex items-start gap-2 text-slate-400 transition-colors hover:text-brand"
                 >
