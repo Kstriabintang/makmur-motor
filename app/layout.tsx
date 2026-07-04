@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import {
   SITE_URL,
   GOOGLE_SITE_VERIFICATION,
+  jsonLdHtml,
   organizationJsonLd,
   websiteJsonLd,
 } from "@/lib/seo";
@@ -78,11 +79,11 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: jsonLdHtml(organizationJsonLd) }}
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: jsonLdHtml(websiteJsonLd) }}
         />
       </head>
       <body className={`${jakarta.variable} ${grotesk.variable} font-sans`}>

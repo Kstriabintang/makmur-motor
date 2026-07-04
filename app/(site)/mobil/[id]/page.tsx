@@ -5,7 +5,7 @@ import { DetailHero, gradientByCategory } from "@/components/car-detail/hero";
 import { Specs } from "@/components/car-detail/specs";
 import { Gallery } from "@/components/car-detail/gallery";
 import { RelatedCars } from "@/components/car-detail/related-cars";
-import { carJsonLd, breadcrumbJsonLd } from "@/lib/seo";
+import { carJsonLd, breadcrumbJsonLd, jsonLdHtml } from "@/lib/seo";
 
 export const dynamic = "force-dynamic";
 
@@ -55,7 +55,7 @@ export default async function MobilDetailPage({
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: jsonLdHtml(jsonLd) }}
       />
       <DetailHero car={car} />
       <Specs car={car} />

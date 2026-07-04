@@ -4,7 +4,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { CalendarDays, Clock, ChevronRight, Lightbulb } from "lucide-react";
 import { getAllPosts, getPostBySlug } from "@/lib/blog";
-import { blogPostingJsonLd, breadcrumbJsonLd } from "@/lib/seo";
+import { blogPostingJsonLd, breadcrumbJsonLd, jsonLdHtml } from "@/lib/seo";
 import { CONTACT } from "@/lib/contact";
 import { waLink } from "@/lib/utils";
 
@@ -64,7 +64,7 @@ export default async function BlogPostPage({
     <article className="pt-16 md:pt-20">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: jsonLdHtml(jsonLd) }}
       />
 
       <div className="container-px py-8 md:py-12">

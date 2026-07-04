@@ -10,11 +10,6 @@ export const carCategories = [
 export const transmisiOptions = ["Manual", "Matic"] as const;
 export const bahanBakarOptions = ["Bensin", "Diesel"] as const;
 
-const emptyToNull = z.preprocess(
-  (v) => (v === "" || v === undefined ? null : v),
-  z.union([z.string(), z.number(), z.null()]),
-);
-
 export const carSchema = z.object({
   nama: z.string().trim().min(1, "Nama mobil wajib diisi"),
   tahun: z.coerce.number().int().min(1980).max(2100),

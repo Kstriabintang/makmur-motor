@@ -9,6 +9,11 @@ export async function GET(
   const { key } = await params;
   const objectKey = key.join("/");
 
+  // Hanya izinkan membaca objek hasil upload — cegah pembacaan key KV sembarang.
+  if (!objectKey.startsWith("uploads/")) {
+    return new Response("Not found", { status: 404 });
+  }
+
   const { env } = await getCloudflareContext({ async: true });
   const obj = await env.MEDIA_KV.getWithMetadata(objectKey, "arrayBuffer");
   if (!obj || obj.value === null) {

@@ -11,6 +11,14 @@ export const SITE_URL = "https://makmurmotor.biz.id";
 export const GOOGLE_SITE_VERIFICATION =
   "Hk3RHTSu8mJKH1u66TtXSHEXClyl0d0OojQMhHX-8q0";
 
+/**
+ * Serialize data untuk `<script type="application/ld+json">`. Escape `<`
+ * agar konten (nama/deskripsi mobil, dsb.) tidak bisa memecah tag `</script>`.
+ */
+export function jsonLdHtml(data: unknown): string {
+  return JSON.stringify(data).replace(/</g, "\\u003c");
+}
+
 /** Build an absolute URL from a path or pass-through if already absolute. */
 export function abs(pathOrUrl: string): string {
   if (/^https?:\/\//.test(pathOrUrl)) return pathOrUrl;
