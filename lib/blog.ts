@@ -554,6 +554,203 @@ export const posts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "panduan-kredit-mobil-bekas-dp-tenor-cicilan",
+    title: "Panduan Kredit Mobil Bekas: DP, Tenor, dan Cara Menghitung Cicilan",
+    description:
+      "Cara kredit mobil bekas di Denpasar — memahami DP, tenor, bunga, dan syarat pengajuan, plus cara menghitung cicilan agar sesuai kemampuan dan tidak memberatkan.",
+    date: "2026-07-04",
+    author: "Tim Makmur Motor",
+    cover: "/cars/brv-e-2022/3.jpg",
+    readMinutes: 6,
+    blocks: [
+      {
+        type: "p",
+        text: "Tidak semua orang mampu membeli mobil bekas secara tunai, dan itu wajar. Kredit membuat mobil impian lebih mudah dijangkau — asalkan Anda memahami cara kerjanya agar cicilan tidak justru membebani keuangan. Panduan ini menjelaskan komponen kredit mobil bekas dan cara menghitungnya dengan sederhana.",
+      },
+      { type: "h2", text: "Komponen Utama Kredit Mobil" },
+      {
+        type: "ul",
+        items: [
+          "Uang muka (DP): pembayaran awal, umumnya 20–30% dari harga mobil.",
+          "Tenor: jangka waktu cicilan, biasanya 1–5 tahun (12–60 bulan).",
+          "Bunga/margin: biaya jasa leasing, memengaruhi besar cicilan bulanan.",
+          "Angsuran: cicilan tetap yang dibayar setiap bulan hingga lunas.",
+          "Biaya lain: administrasi, asuransi, dan provisi di awal kredit.",
+        ],
+      },
+      { type: "h2", text: "Cara Sederhana Menghitung Cicilan" },
+      {
+        type: "p",
+        text: "Sebagai gambaran kasar: kurangi harga mobil dengan DP untuk mendapat pokok utang, tambahkan estimasi bunga selama tenor, lalu bagi dengan jumlah bulan. Contoh: mobil Rp150 juta dengan DP 30% (Rp45 juta) menyisakan pokok Rp105 juta. Dengan tenor dan bunga tertentu, Anda akan mendapat angka cicilan bulanan yang bisa langsung dibandingkan dengan kemampuan Anda.",
+      },
+      {
+        type: "tip",
+        text: "Jaga total cicilan (termasuk utang lain) di bawah 30% penghasilan bulanan. Di angka ini, keuangan Anda tetap sehat dan ada ruang untuk kebutuhan lain serta dana darurat.",
+      },
+      { type: "h2", text: "DP Besar atau Tenor Panjang?" },
+      {
+        type: "ul",
+        items: [
+          "DP lebih besar: cicilan bulanan ringan dan total bunga lebih kecil.",
+          "Tenor lebih panjang: cicilan ringan, tetapi total yang dibayar membengkak.",
+          "Tenor lebih pendek: cepat lunas dan hemat bunga, tapi cicilan lebih berat.",
+        ],
+      },
+      { type: "h2", text: "Syarat Umum Pengajuan Kredit" },
+      {
+        type: "ul",
+        items: [
+          "KTP, Kartu Keluarga, dan NPWP (untuk plafon tertentu).",
+          "Bukti penghasilan seperti slip gaji atau mutasi rekening.",
+          "Rekening listrik/PBB sebagai bukti domisili.",
+          "Riwayat kredit (BI Checking/SLIK) yang bersih tanpa tunggakan.",
+        ],
+      },
+      { type: "h2", text: "Tips Agar Pengajuan Disetujui" },
+      {
+        type: "p",
+        text: "Ajukan cicilan yang realistis sesuai penghasilan, siapkan DP lebih besar bila mampu, dan pastikan riwayat kredit Anda bersih. Membeli di showroom yang sudah bermitra dengan banyak leasing juga mempermudah proses karena dokumen mobil dijamin lengkap dan legal.",
+      },
+      {
+        type: "p",
+        text: "Makmur Motor membantu proses kredit mobil bekas di Denpasar dengan mitra leasing terpercaya, plus pilihan tukar tambah. Lihat unit yang tersedia di katalog kami, atau chat via WhatsApp untuk simulasi cicilan sesuai budget Anda.",
+      },
+    ],
+  },
+  {
+    slug: "cara-tukar-tambah-mobil-bekas-di-denpasar",
+    title: "Cara Tukar Tambah Mobil Bekas: Proses, Syarat, dan Tips Harga Terbaik",
+    description:
+      "Panduan tukar tambah mobil bekas di Denpasar — cara kerja, syarat dokumen, faktor penentu harga, dan tips agar mobil lama Anda dihargai maksimal.",
+    date: "2026-07-02",
+    author: "Tim Makmur Motor",
+    cover: "/cars/xenia-ads-2022/2.jpg",
+    readMinutes: 5,
+    blocks: [
+      {
+        type: "p",
+        text: "Ingin ganti mobil tanpa repot menjual sendiri lebih dulu? Tukar tambah adalah solusinya. Mobil lama Anda ditaksir, nilainya dipotong dari harga mobil baru (bekas) yang Anda incar, dan Anda cukup membayar selisihnya. Praktis, cepat, dan aman. Berikut cara kerjanya.",
+      },
+      { type: "h2", text: "Bagaimana Tukar Tambah Bekerja?" },
+      {
+        type: "ol",
+        items: [
+          "Anda memilih mobil incaran di showroom dan mengajukan tukar tambah.",
+          "Tim menaksir kondisi dan harga pasar mobil lama Anda.",
+          "Nilai mobil lama dipotong dari harga mobil incaran.",
+          "Anda membayar selisihnya, secara tunai maupun kredit.",
+          "Proses dokumen dan serah terima diselesaikan di satu tempat.",
+        ],
+      },
+      { type: "h2", text: "Keuntungan Tukar Tambah" },
+      {
+        type: "ul",
+        items: [
+          "Tidak perlu repot memasang iklan dan melayani calon pembeli.",
+          "Lebih aman — transaksi resmi di showroom, bukan dengan orang asing.",
+          "Hemat waktu: jual mobil lama dan beli baru sekaligus.",
+          "Bisa dikombinasikan dengan kredit untuk meringankan pembayaran.",
+        ],
+      },
+      { type: "h2", text: "Faktor yang Menentukan Harga Mobil Lama Anda" },
+      {
+        type: "ul",
+        items: [
+          "Merek dan model — mobil yang laris di pasaran dihargai lebih tinggi.",
+          "Tahun produksi dan angka kilometer.",
+          "Kondisi mesin, bodi, interior, dan kaki-kaki.",
+          "Kelengkapan dan keabsahan dokumen (STNK, BPKB, faktur).",
+          "Riwayat servis dan status pajak yang hidup.",
+        ],
+      },
+      { type: "h2", text: "Syarat Dokumen" },
+      {
+        type: "p",
+        text: "Siapkan STNK, BPKB, dan faktur asli mobil lama, serta KTP sesuai nama pemilik. Pastikan nomor rangka dan mesin cocok dengan dokumen, dan pajak dalam keadaan hidup agar taksiran harga tidak terpotong.",
+      },
+      {
+        type: "tip",
+        text: "Bersihkan dan rapikan mobil lama sebelum ditaksir. Servis ringan, cuci bersih, dan interior yang wangi memberi kesan terawat sehingga taksiran harga cenderung lebih baik.",
+      },
+      { type: "h2", text: "Tips Agar Dapat Harga Terbaik" },
+      {
+        type: "p",
+        text: "Ketahui dulu harga pasaran mobil lama Anda sebagai pembanding, lengkapi seluruh dokumen, dan bandingkan penawaran secara wajar. Tukar tambah di showroom terpercaya memberi Anda taksiran yang transparan tanpa drama.",
+      },
+      {
+        type: "p",
+        text: "Makmur Motor melayani tukar tambah mobil bekas di Denpasar dengan penaksiran jujur dan proses satu pintu. Lihat pilihan mobil pengganti di katalog kami, atau chat via WhatsApp untuk mengetahui estimasi harga mobil lama Anda.",
+      },
+    ],
+  },
+  {
+    slug: "cara-merawat-mobil-bekas-agar-awet-dan-irit",
+    title: "Cara Merawat Mobil Bekas Agar Awet, Irit, dan Tetap Prima",
+    description:
+      "Tips merawat mobil bekas agar mesin awet dan irit BBM — jadwal servis, ganti oli, perawatan ban, AC, aki, hingga kebiasaan berkendara yang menghemat biaya.",
+    date: "2026-06-30",
+    author: "Tim Makmur Motor",
+    cover: "/cars/confero-2021/2.jpg",
+    readMinutes: 6,
+    blocks: [
+      {
+        type: "p",
+        text: "Membeli mobil bekas berkualitas hanyalah langkah awal. Agar tetap prima, irit, dan bernilai jual tinggi, mobil perlu dirawat secara rutin. Kabar baiknya, perawatan mobil bekas tidak harus mahal — cukup konsisten. Berikut panduannya.",
+      },
+      { type: "h2", text: "1. Patuhi Jadwal Servis Berkala" },
+      {
+        type: "p",
+        text: "Servis rutin adalah kunci umur panjang mesin. Ikuti jadwal servis sesuai buku panduan atau anjuran bengkel, biasanya setiap 5.000–10.000 km. Servis berkala mendeteksi masalah kecil sebelum menjadi kerusakan besar yang mahal.",
+      },
+      { type: "h2", text: "2. Ganti Oli Tepat Waktu" },
+      {
+        type: "ul",
+        items: [
+          "Ganti oli mesin sesuai interval dan gunakan spesifikasi yang tepat.",
+          "Jangan lupakan oli transmisi, terutama untuk mobil matic.",
+          "Periksa oli rem dan power steering secara berkala.",
+        ],
+      },
+      { type: "h2", text: "3. Rawat Ban dan Kaki-Kaki" },
+      {
+        type: "ul",
+        items: [
+          "Jaga tekanan angin ban sesuai anjuran — ban kempis membuat boros BBM.",
+          "Lakukan spooring dan balancing bila setir bergetar atau ban aus tidak rata.",
+          "Rotasi ban secara berkala agar keausan merata.",
+        ],
+      },
+      { type: "h2", text: "4. Jaga Sistem Pendingin dan AC" },
+      {
+        type: "p",
+        text: "Periksa air radiator (coolant) secara rutin agar mesin tidak overheat, terutama untuk perjalanan jauh. Bersihkan filter AC dan lakukan servis AC berkala agar kabin tetap sejuk dan hemat energi.",
+      },
+      { type: "h2", text: "5. Perhatikan Aki dan Kelistrikan" },
+      {
+        type: "p",
+        text: "Aki adalah komponen yang sering terlupakan hingga mogok. Cek kondisi aki, bersihkan terminal dari kerak, dan ganti bila sudah lemah. Perhatikan juga lampu dan kelistrikan agar berfungsi normal demi keamanan.",
+      },
+      { type: "h2", text: "6. Berkendara dengan Bijak Agar Irit" },
+      {
+        type: "ul",
+        items: [
+          "Hindari akselerasi dan pengereman mendadak yang boros BBM.",
+          "Jaga putaran mesin (RPM) stabil dan pindah gigi pada waktu tepat.",
+          "Kurangi beban berlebih dan barang yang tidak perlu di bagasi.",
+          "Panaskan mobil secukupnya, tidak perlu terlalu lama.",
+        ],
+      },
+      {
+        type: "tip",
+        text: "Simpan catatan servis dan penggantian komponen. Selain memudahkan perawatan, riwayat yang rapi menaikkan nilai jual kembali mobil Anda di kemudian hari.",
+      },
+      {
+        type: "p",
+        text: "Dengan perawatan konsisten, mobil bekas bisa menemani Anda bertahun-tahun tanpa masalah berarti. Butuh mobil bekas yang sudah terawat dan lolos pemeriksaan? Jelajahi katalog Makmur Motor, atau konsultasi gratis via WhatsApp — kami bantu Anda memilih unit terbaik.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts(): BlogPost[] {
